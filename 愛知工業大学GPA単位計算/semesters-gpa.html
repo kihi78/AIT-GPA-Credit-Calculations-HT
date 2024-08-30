@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/semesters-gpa.css">
+        <title>成績単位GPAまとめ | 修得科目の単位と評価</title>
+    </head>
+    <body>
+        <div class="header">
+            <a class="other-url" href="index.html">全科目</a>
+            <a class="other-url" href="credits-grades.html">単位数</a>
+            <a class="heres-url">GPA</a>
+            <a class="other-url" href="promotion-requirements.html">進級要件</a>
+            <a class="other-url" href="course-info.html">開講情報</a>
+        </div>
+        <div class="main">
+            <div class="content">
+                <table class="table-header">
+                    <tbody>
+                        <tr>
+                            <td>科目名</td>
+                            <td>単位</td>
+                            <td>評価</td>
+                            <td>学期</td>
+                            <td>年度</td>
+                            <td>2年まで</td>
+                            <td>累積</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="cumulative">
+                    <div id="cumulative-tables">
+                        <div class="first-second">
+                            <div id="first-second-tables">
+                                <div class="first">
+                                    <div class="first-tables">
+                                        <div class="first-semester">
+                                            <table id="first-year-first-semester"></table>
+                                            <p id="first-year-first-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                        <div class="second-semester">
+                                            <table id="first-year-second-semester"></table>
+                                            <p id="first-year-second-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                    </div>
+                                    <p id="first-gpa" class="gpa-div"></p>
+                                </div>
+                                <div class="second">
+                                    <div class="second-tables">
+                                        <div class="first-semester">
+                                            <table id="second-year-first-semester"></table>
+                                            <p id="second-year-first-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                        <div class="second-semester">
+                                            <table id="second-year-second-semester"></table>
+                                            <p id="second-year-second-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                    </div>
+                                    <p id="second-gpa" class="gpa-div"></p>
+                                </div>
+                            </div>
+                            <p id="first-second-gpa" class="gpa-div"></p>
+                        </div>
+                        <div class="third-fourth">
+                            <div id="third-fourth-tables">
+                                <div class="third">
+                                    <div class="third-tables">
+                                        <div class="first-semester">
+                                            <table id="third-year-first-semester"></table>
+                                            <p id="third-year-first-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                        <div class="second-semester">
+                                            <table id="third-year-second-semester"></table>
+                                            <p id="third-year-second-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                    </div>
+                                    <p id="third-gpa" class="gpa-div"></p>
+                                </div>
+                                <div class="fourth">
+                                    <div class="fourth-tables">
+                                        <div class="first-semester">
+                                            <table id="fourth-year-first-semester"></table>
+                                            <p id="fourth-year-first-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                        <div class="second-semester">
+                                            <table id="fourth-year-second-semester"></table>
+                                            <p id="fourth-year-second-semester-gpa" class="gpa-div"></p>
+                                        </div>
+                                    </div>
+                                    <p id="fourth-gpa" class="gpa-div"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="cumulative-gpa" class="gpa-div"></p>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./js/semesters-gpa.js"></script>
+        <script type="module" src="./js/semesters-gpa-widths-resize.js"></script>
+    </body>
+</html>

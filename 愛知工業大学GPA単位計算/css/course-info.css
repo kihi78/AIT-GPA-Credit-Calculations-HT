@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: clamp(55px, 6vh, 6vh);
+    background-color: #f5f5f5;
+    color: white;
+    border: 1px solid #999999;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1%;
+    padding-top: 70px;
+}
+
+.heres-url {
+    width: 20%;
+    height: 100%;
+    font-size: clamp(1.5em, 3vh, 3vh);
+    font-weight: bold;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-url {
+    width: 20%;
+    height: 100%;
+    font-size: clamp(1.5em, 3vh, 3vh);
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-url:hover {
+    background-color: #dddddd;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 2px solid #555555;
+    border-collapse: collapse;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    height: 35px;
+    font-size: 1.2em;
+    border: 1px solid #555555;
+}
+
+td:nth-child(1):not(.course-name) {
+    width: calc(100% - 730px);
+    min-width: 300px;
+}
+
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td:nth-child(9),
+td:nth-child(10) {
+    width: 60px;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+td:nth-child(11) {
+    width: 60px;
+    min-width: 45px;
+    text-align: center;
+}
+
+table tr:hover td:not(.course-name):not(table.table-header td) {
+    background-color: #bbbbbb;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.table-header {
+    width: 100%;
+    background-color: #eeeeee;
+    font-weight: bold;
+    position: sticky;
+    top: clamp(55px, 6vh, 6vh);
+    z-index: 1;
+}
+
+.table-header td:nth-child(1) {
+    width: calc(100% - 600px);
+    min-width: 343px;
+    text-align: center;
+}
+
+.course-name {
+    width: 130px;
+    max-width: 130px;
+    min-width: 40px;
+    background-color: #fdfdfd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.remarks {
+    font-size: 1.2em;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/promotion-requirements.css">
+        <title>成績単位GPAまとめ | 全科目</title>
+    </head>
+    <body>
+        <div class="header">
+            <a class="other-url" href="index.html">全科目</a>
+            <a class="other-url" href="credits-grades.html">単位数</a>
+            <a class="other-url" href="semesters-gpa.html">GPA</a>
+            <a class="heres-url">進級要件</a>
+            <a class="other-url" href="course-info.html">開講情報</a>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h2 id="total-credit"></h2>
+                <div class="requirements">
+                    <div class="promotion-requirements-and-specialized-restricted">
+                        <h2>進級要件</h2>
+                        <p id="first-second-year">　一年次～二年次: 20単位</p>
+                        <p id="second-third-year">　二年次～三年次: 54単位</p>
+                        <p id="third-fourth-year">　三年次～四年次: 94単位</p>
+                        <h2>専門選択必修科目</h2>
+                        <p id="specialized-restricted"></p>
+                        <h2>英語系科目</h2>
+                        <p id="english"></p>
+                    </div>
+                    <div class="graduation-requirements">
+                        <h2>卒業要件</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>専門</th>
+                                    <th>総合</th>
+                                    <th>計</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>必修</td>
+                                    <td id="specialized-required"></td>
+                                    <td id="general-required"></td>
+                                    <td id="required-total"></td>
+                                </tr>
+                                <tr>
+                                    <td>選択</td>
+                                    <td id="specialized-elective"></td>
+                                    <td id="general-elective"></td>
+                                    <td id="elective-total"></td>
+                                </tr>
+                                <tr>
+                                    <td>計</td>
+                                    <td id="specialized-total"></td>
+                                    <td id="general-total"></td>
+                                    <td id="total"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./js/promotion-requirements.js"></script>
+        <script type="module" src="./js/promotion-requirements-widths-resize.js"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: clamp(55px, 6vh, 6vh);
+    background-color: #f5f5f5;
+    color: white;
+    border: 1px solid #999999;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1%;
+    padding-top: 71px;
+}
+
+.heres-url {
+    width: 20%;
+    height: 100%;
+    font-size: clamp(1.5em, 3vh, 3vh);
+    font-weight: bold;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-url {
+    width: 20%;
+    height: 100%;
+    font-size: clamp(1.5em, 3vh, 3vh);
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-url:hover {
+    background-color: #dddddd;
+}
+
+td {
+    height: 35px;
+    font-size: 1.2em;
+    border: 1px solid #555555;
+}
+
+table {
+    width: 100%;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border: 2px solid #555555;
+    border-left: none;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gen-req-res6-table-div,
+table:not(#general-required):not(#general-restricted6):not(.table-header) {
+    width: calc(100% - 181px);
+}
+
+table:not(#general-restricted6):not(#general-restricted8):not(#general-elective):not(.table-header) {
+    border-top: none;
+}
+
+table:not(#general-restricted6):not(#general-restricted8):not(.table-header) {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+td:nth-child(1):not(.course-name) {
+    width: calc(100% - 430px);
+    min-width: 300px;
+}
+
+td:nth-child(2),
+td:nth-child(3) {
+    width: 60px;
+    min-width: 20px;
+    text-align: center;
+}
+
+td:nth-child(4) {
+    width: 180px;
+    text-align: center;
+}
+
+table tr:hover td:not(.course-name):not(table.table-header td) {
+    background-color: #bbbbbb;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.table-header {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border: 2px solid #555555;
+    font-weight: bold;
+    position: sticky;
+    top: clamp(55px, 6vh, 6vh);
+    z-index: 1;
+}
+
+.table-header td:nth-child(1) {
+    width: calc(100% - 300px);
+    min-width: 343px;
+    text-align: center;
+}
+
+.course-name {
+    width: 130px;
+    max-width: 130px;
+    min-width: 40px;
+    background-color: #fdfdfd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gen-res8-div,
+.gen-elec-div {
+    margin-top: 10px;
+}
+
+#gen-req-res6-table-div,
+.gen-res8-div {
+    margin-bottom: -1px;
+}
+
+#specialized-required-credits,
+#specialized-elective-credits,
+#specialized-restricted-credits,
+#general-required-restricted6-credits,
+#general-required-restricted6-restricted8-credits,
+#general-required-restricted6-restricted8-elective-credits {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spec-num,
+.gen-elec-num {
+    width: 180px;
+}
+
+.gen-req-res6-res8-num {
+    width: 120px;
+}
+
+.gen-req-res6-num {
+    width: 60px;
+}
+
+.spec-div {
+    width: calc(100% - 4px);
+    margin-bottom: 10px;
+    border: 2px solid #555555;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.gen-div {
+    width: calc(100% - 4px);
+    border: 2px solid #555555;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gen-elec-div,
+.gen-res8-div,
+#gen-req-res6-div {
+    width: 100%;
+    display: flex;
+}
+
+#gen-req-res6-res8-div {
+    min-width: 474px;
+    border: 2px solid #555555;
+    border-top: none;
+    border-left: none;
+}
+
+#gen-req-res6-div {
+    min-width: 469px;
+    border: 2px solid #555555;
+    border-top: none;
+    border-left: none;
+}
+
+#gen-req-res6-table-div {
+    border: none;
+}

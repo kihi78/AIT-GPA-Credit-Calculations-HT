@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/credits-grades.css">
+        <title>成績単位GPAまとめ | 修得科目の単位と評価</title>
+    </head>
+    <body>
+        <div class="header">
+            <a class="other-url" href="index.html">全科目</a>
+            <a class="heres-url">単位数</a>
+            <a class="other-url" href="semesters-gpa.html">GPA</a>
+            <a class="other-url" href="promotion-requirements.html">進級要件</a>
+            <a class="other-url" href="course-info.html">開講情報</a>
+        </div>
+        <div class="main">
+            <div class="content">
+                <table class="table-header">
+                    <tbody>
+                        <tr>
+                            <td>科目名</td>
+                            <td>単位</td>
+                            <td>評価</td>
+                            <td>単位合計</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="spec-div">
+                    <table id="specialized-required"></table>
+                    <p id="specialized-required-credits" class="spec-num"></p>
+                </div>
+                <div class="spec-div">
+                    <table id="specialized-elective"></table>
+                    <p id="specialized-elective-credits" class="spec-num"></p>
+                </div>
+                <div class="spec-div">
+                    <table id="specialized-restricted"></table>
+                    <p id="specialized-restricted-credits" class="spec-num"></p>
+                </div>
+                <div class="gen-div">
+                    <div id="gen-req-res6-res8-div">
+                        <div id="gen-req-res6-div">
+                            <div id="gen-req-res6-table-div">
+                                <table id="general-required"></table>
+                                <table id="general-restricted6"></table>
+                            </div>
+                            <p id="general-required-restricted6-credits" class="gen-req-res6-num"></p>
+                        </div>
+                        <div class="gen-res8-div">
+                            <table id="general-restricted8"></table>
+                            <p id="general-required-restricted6-restricted8-credits" class="gen-req-res6-res8-num"></p>
+                        </div>
+                    </div>
+                    <div class="gen-elec-div">
+                        <table id="general-elective"></table>
+                        <p id="general-required-restricted6-restricted8-elective-credits" class="gen-elec-num"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./js/credits-grades.js"></script>
+        <script type="module" src="./js/credits-grades-widths-resize.js"></script>
+    </body>
+</html>
